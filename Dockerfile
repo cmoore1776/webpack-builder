@@ -8,6 +8,7 @@ RUN  \
     curl \
     libgl1 \
     libglib2.0-dev \
+    libvips \
     libxi6 \
     pkg-config \
     python3-pip \
