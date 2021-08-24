@@ -26,7 +26,7 @@ RUN  \
   python3 -m pip install --upgrade pip && \
   python3 -m pip install awscli && \
   npm install --global npm && \
-  adduser --system --disabled-login --ingroup webpack --no-create-home webpack && \
+  adduser --system --disabled-login --no-create-home webpack && \
   rm -rf /var/lib/apt/lists/*
 
 USER webpack
