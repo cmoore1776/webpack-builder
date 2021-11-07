@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 node:14-buster-slim
+FROM --platform=linux/amd64 node:16-buster-slim
 
 RUN  \
   apt update && \
