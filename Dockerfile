@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 node:16-bullseye-slim
+FROM --platform=linux/amd64 debian:bookworm-slim
 
 RUN  \
   apt update && \
@@ -13,6 +13,9 @@ RUN  \
     pkg-config \
     python3-pip \
   && \
+  curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh && \
+  bash nodesource_setup.sh && \
+  apt install nodejs && \
   python3 -m pip install --upgrade pip && \
   python3 -m pip install awscli && \
   npm install --global npm && \
