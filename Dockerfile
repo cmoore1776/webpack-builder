@@ -20,4 +20,5 @@ RUN  \
   python3 -m pip install --upgrade pip && \
   python3 -m pip install awscli && \
   npm install --global npm && \
+  npm install --global aws-cdk && \
   rm -rf /var/lib/apt/lists/*
