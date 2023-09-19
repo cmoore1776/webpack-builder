@@ -13,7 +13,7 @@ RUN  \
     pkg-config \
     python3-pip \
   && \
-  curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh && \
+  curl -sL https://deb.nodesource.com/setup_20.x -o nodesource_setup.sh && \
   bash nodesource_setup.sh && \
   apt install nodejs && \
   rm /usr/lib/python3.11/EXTERNALLY-MANAGED && \
