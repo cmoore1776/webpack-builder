@@ -26,7 +26,7 @@ RUN  \
   echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list && \
   apt update && \
   apt install -y nodejs && \
-  rm /usr/lib/python3.11/EXTERNALLY-MANAGED && \
+  rm -f /usr/lib/python3.*/EXTERNALLY-MANAGED && \
   python -m pip install --upgrade pip && \
   npm install --global npm && \
   npm install --global aws-cdk && \
